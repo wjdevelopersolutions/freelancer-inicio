@@ -1,4 +1,77 @@
-body {
 
-	
+/*Selector*/
+/*Propiedades*/
+/*Valor*/
+
+/*Crear paleta de colores*/
+:root {
+	--blanco: #ffffff;
+	--oscuro: #212121;
+	--primary: #557174;
+	--secondary: #9dad7f;
+	--tertiary: #c7cfb7;
+	--bg-blanco: #f7f7e8;
 }
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 16px; /* 1rem = 10px */
+	font-family: 'Krub', sans-serif;
+}
+
+.contenedor {
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
+.nav-bg {
+	background-color: var( --primary );
+	display: block;
+}
+
+header .titulo {
+	text-align: center;
+	font-size: 3.8rem;
+}
+
+.titulo span {
+	font-size: 2rem;
+}
+
+.navegacion-principal {
+	display: flex;
+	flex-direction: column;
+}
+
+@media (min-width: 760px) {
+
+ 	/* Your code goes here! */ 
+ 	.navegacion-principal {
+		flex-direction: row;
+		justify-content: space-between;
+ 	}
+ 
+}
+
+.navegacion-principal a {
+	display: block;
+	text-align: center;
+	color: var( --blanco );
+	font-weight: 700;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+.navegacion-principal a:hover {
+	background-color: var( --secondary );
+	color: var( --oscuro );
+}
+
+.hero {
+	background-image: url('../img/hero.jpg');
+}
+
